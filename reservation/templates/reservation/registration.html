@@ -1,0 +1,156 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="css/Regis.css" type="text/css"/>
+</head>
+<body>
+        
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#edu">
+                    <span class="icon-bar" style="background-color: black;"></span>
+                    <span class="icon-bar" style="background-color: black;"></span>
+                    <span class="icon-bar" style="background-color: black;"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="color:red;" id="logo1"><u>Let's Go </u></a>
+            </div>
+            <div class="collapse navbar-collapse" id="edu">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html" target="blank" id="text_color">Home</a></li>
+                    <li><a href="#" id="text_color">About</a></li>
+                    <li><a href="#" id="text_color">Contact</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="text_color">
+                        View <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Trains</a></li>
+                            <li><a href="#">Bookings</a></li>
+                            <li><a href="#">Ticket</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Regis.html"  class="glyphicon glyphicon-user" style="font-size: 20px; color: black; font-weight: bold;" target="blank" > SignUp</a></li>
+                    <li><a href="login.html"  class="glyphicon glyphicon-log-in" target="blank" style="font-size: 20px; color: black; font-weight: bold;"> LogIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+        <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+            Registration Form
+            </div>
+            <div class="panel-body">
+            <form action="abc.js">
+            <div class="form-group">
+            <label>FirstName *</label>
+            <input type="text" placeholder="firstname" class="form-control" required/>
+            </div>
+            <div class="form-group">
+            <label>LastName</label>
+            <input type="text" placeholder="LastName" class="form-control"/>
+            </div>
+            <div class="form-group">
+            <label>Age *</label>
+            <input type="date" placeholder="age" class="form-control"/>
+            </div>
+            <div class="row">
+            <div class="form-group col-md-6">
+            <label>Email</label>
+            <input type="email" placeholder="email" class="form-control"/>
+            </div>
+            <div class="form-group col-md-6">
+            <label>Password</label>
+            <input type="password" placeholder="password" class="form-control"/>
+            </div>
+            <div class="form-group col-md-6">
+            <label>Gender *</label>
+                <label class="radio-inline">
+                <input type="radio" name="optradio" checked>Male
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio">Female
+            </label>
+        </div>
+            <div class="form-group col-md-6">
+            <label>Marital Status *</label>
+                <label class="radio-inline">
+                <input type="radio" name="optradio" checked>Married
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="optradio">Unmarried
+            </label>
+        </div>
+        <div class="selection form-group col-md-6">
+            <label>Country*</label>
+            <select name="states">
+                <option value="">Select Country</option>
+                <option value="AC">India</option>   
+                <option value="SL">Australia</option>   
+                <option value="Gn">United states</option>
+                <option value="Cc">Canada</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <div class="form-group" style="float: left;">
+                <label>Contact*</label>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-3">
+                <input type="number" placeholder="91" class="form-control"/>
+            </div> 
+            <div class="col-md-6 col-sm-4 col-xs-6">
+                <input type="number" placeholder="Mobile" class="form-control"/>
+            </div> 
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" placeholder="Address-Flat/Door/Block No" class="form-control"/>
+            </div>
+            <div class="form-group col-md-6">
+            <input type="text" placeholder="Street/Lane" class="form-control"/>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" placeholder="Area/Locality" class="form-control"/>
+                </div>
+                <div class="form-group col-md-6">
+                <input type="text" placeholder="PINCODE" class="form-control"/>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" placeholder="City" class="form-control"/>
+                    </div>
+                    <div class="form-group col-md-6 selection" >
+                        <label>State*</label>
+                        <select name="states">
+                            <option value="">Select State</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>   
+                            <option value="Assam">Assam</option>   
+                            <option value="Bihar">Bihar</option>   
+                            <option value="Goa">Goa</option>   
+                            <option value="Gujarat">Gujarat</option>   
+                            <option value="Haryana">Haryana</option>   
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>   
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>   
+                            <option value="Jharkhand">Jharkhand</option>   
+                            <option value="Karnataka">Karnataka</option>   
+                            <option value="Kerala">Kerala</option>   
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>   
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>   
+                        </select>
+                        </div>
+         </div>   
+        <div>
+                <button type="submit" class="btn btn-success" style="align-self: center;">Submit</button>
+                <input type="reset" class="btn btn-danger" value="Reset"/>
+            </div>
+            </form>
+            </div>
+            </div>
+

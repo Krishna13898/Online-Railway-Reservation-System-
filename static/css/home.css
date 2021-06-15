@@ -1,0 +1,66 @@
+.imagecontainer{
+    background: url(../images/home_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid gray;
+}
+.home_form{
+    background: url(../images/home_form_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid gray;
+}
+.navbar{
+    background-color:rgb(255, 180, 40);
+}
+#logo1{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#text_color{
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+#logo{
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#railwaylogo{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+.dropdown1{
+    height: 60px;
+    width: 280px;
+    font-size: 18px;
+    margin-right: 10px;
+
+}
+.panel{
+    width: 60%;
+    margin-left: 200px;
+}
+.fun{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    color:red;
+}
+#head{
+    font-size: 30px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+}

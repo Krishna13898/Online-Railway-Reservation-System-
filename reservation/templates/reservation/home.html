@@ -1,0 +1,128 @@
+<html>
+    {% load static %}
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+    <div class="imagecontainer">  
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#edu">
+                        <span class="icon-bar" style="background-color: black;"></span>
+                        <span class="icon-bar" style="background-color: black;"></span>
+                        <span class="icon-bar" style="background-color: black;"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="color:red;" id="logo1"><u>Let's Go </u></a>
+                </div>
+                <div class="collapse navbar-collapse" id="edu">
+                    <ul class="nav navbar-nav">
+                        
+                        <li><a href="#" id="text_color">About</a></li>
+                        <li><a href="#" id="text_color">Contact</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="text_color">
+                            View <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Trains</a></li>
+                                <li><a href="#">Bookings</a></li>
+                                <li><a href="#">Ticket</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Regis.html"  class="glyphicon glyphicon-user" style="font-size: 20px; color: black; font-weight: bold;" target="blank" > SignUp</a></li>
+                        <li><a href="login.html"  class="glyphicon glyphicon-log-in" target="blank" style="font-size: 20px; color: black; font-weight: bold;"> LogIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            <div id="logo">
+                <img  id ="railwaylogo" src="{% static 'images/logo_img.png' %}" />
+            </div>
+            <div id="Head">
+                <h1><i><b>Book your train tickets at Ease!!</b></i></h1>
+            </div>
+    </div>
+    <div class="home_form">
+        <div class="container" style="margin-top: 5px;">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                Search Train
+                </div>
+                <div class="panel-body" >
+                <form action="abc.js">
+                    <div class="row">
+                        <div class="form-group col-md-6 selection dropdown1">
+                        <label>From(Origin)</label>
+                        <select name="states">
+                            <option value="">--------STATES--------</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>   
+                            <option value="Assam">Assam</option>   
+                            <option value="Bihar">Bihar</option>   
+                            <option value="Goa">Goa</option>   
+                            <option value="Gujarat">Gujarat</option>   
+                            <option value="Haryana">Haryana</option>   
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>   
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>   
+                            <option value="Jharkhand">Jharkhand</option>   
+                            <option value="Karnataka">Karnataka</option>   
+                            <option value="Kerala">Kerala</option>   
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>   
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>   
+                        </select>
+                        </div>
+                        <div class="form-group col-md-6 selection dropdown1" >
+                        <label>To(Destination)</label>
+                        <select name="states">
+                            <option value="">--------STATES---------</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>   
+                            <option value="Assam">Assam</option>   
+                            <option value="Bihar">Bihar</option>   
+                            <option value="Goa">Goa</option>   
+                            <option value="Gujarat">Gujarat</option>   
+                            <option value="Haryana">Haryana</option>   
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>   
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>   
+                            <option value="Jharkhand">Jharkhand</option>   
+                            <option value="Karnataka">Karnataka</option>   
+                            <option value="Kerala">Kerala</option>   
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>   
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>   
+                        </select>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label>Journey date</label>
+                            <input type="date" class="form-control"/>
+                            </div>
+                            <div class="form-group col-md-6 selection dropdown1" >
+                                <label>Trip class</label>
+                                <select name="states">
+                                    <option value="">--------CLASS---------</option>
+                                    <option value="AC">AC</option>   
+                                    <option value="SL">Sleeper</option>   
+                                    <option value="Gn">General</option>
+                                    <option value="Cc">Chair car</option>
+                                </select>
+                            </div>
+                        </div>
+                            <div>
+                                <button type="submit" class="btn btn-success">Search</button>
+                            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>

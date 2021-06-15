@@ -1,0 +1,73 @@
+<html>
+  {% load static %}
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="{% static 'css/login.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#edu">
+                <span class="icon-bar" style="background-color: black;"></span>
+                <span class="icon-bar" style="background-color: black;"></span>
+                <span class="icon-bar" style="background-color: black;"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="color:red;" id="logo1"><u>Let's Go </u></a>
+        </div>
+        <div class="collapse navbar-collapse" id="edu">
+            <ul class="nav navbar-nav">
+                <li><a href="home.html" target="blank" id="text_color">Home</a></li>
+                <li><a href="#" id="text_color">About</a></li>
+                <li><a href="#" id="text_color">Contact</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="text_color">
+                    View <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Trains</a></li>
+                        <li><a href="#">Bookings</a></li>
+                        <li><a href="#">Ticket</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'registration' %}"  class="glyphicon glyphicon-user" style="font-size: 20px; color: black; font-weight: bold;" target="blank" > SignUp</a></li>
+                            
+        </div>
+    </div>
+</nav>
+ <h1 style="text-align: center; color:black;">LOGIN FORM</h1>
+<form action="action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="{% static 'images/img_avatar2.png' %}" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container design" >
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <div style="text-align: center;">
+  
+        <button type="submit" >Login</button><br/>
+      </div>
+      <div>
+      <div >
+        <div style="float: right;">
+          <a href="Regis.html" target="blank" style="color: blue;">Not Registered Yet? Sign Up</a>
+      </div>
+      <input type="checkbox" checked="checked" name="remember" > Remember me
+      </div>
+    </div>
+    </div>
+  
+    
+  </form>
+</body>
+</html>
